@@ -3,10 +3,10 @@ pipeline {
     agent any 
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'
+        DOCKER_CREDENTIALS_ID = 'alexanmf-dockerhub'
         DOCKER_IMAGE = 'cithit/alexanmf'                                                 // <------change this
         IMAGE_TAG = "build-${BUILD_NUMBER}"
-        GITHUB_URL = 'https://github.com/alexanmf/test2.git'                   // <------change this
+        GITHUB_URL = 'https://github.com/alexanmf/3-1.git'                   // <------change this
         KUBECONFIG = credentials('alexanmf-225')                                             // <------change this
     }
 
